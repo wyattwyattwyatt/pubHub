@@ -1,0 +1,19 @@
+package pubhub.pubhub
+
+import org.springframework.stereotype.Controller
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RestController
+
+
+@RestController
+class webController2 {
+
+    val test = 0
+
+
+    @GetMapping("/home2")
+    fun home2(): String{
+        return "wyatt2"
+    }
+
+}
