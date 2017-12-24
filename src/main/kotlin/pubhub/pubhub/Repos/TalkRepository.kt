@@ -2,15 +2,15 @@ package pubhub.pubhub.Repos
 
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Component
-import pubhub.pubhub.DBObjects.Hub
+import pubhub.pubhub.DBObjects.Talk
 
 
 @Component
-interface TalkRepository : MongoRepository<Hub, String> {
+interface TalkRepository : MongoRepository<Talk, String> {
 
 
 
-    override fun findAll(): ArrayList<Hub>
+    override fun findAll(): ArrayList<Talk>
 
 
 }
